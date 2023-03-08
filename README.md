@@ -2,6 +2,9 @@
 Express x JWT x Sign In with Solana API server minimal example.  
 For experiment purpose only.
 
+## System Process and Program Scope
+![System Process](https://github.com/256hax/sign-in-with-solana-api-server/blob/main/docs/screenshot/sytem-process.png?raw=true)
+
 ## Tech
 - Express.js(API Mode)
 - JWT: [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
