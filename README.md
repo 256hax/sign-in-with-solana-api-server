@@ -30,3 +30,6 @@ Then request API using Postman:
 ## TODO
 - Encryption JWT
 - Follow Sign In With (SIW) standards(EIP-4361)
+
+## Another Way
+If you need to full-stack, use [Blocksmith-Labs/solana-next-auth](https://github.com/Blocksmith-Labs/solana-next-auth) (build by NextAuth.js and Next.js).
