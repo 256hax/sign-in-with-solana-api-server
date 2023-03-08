@@ -1,0 +1,24 @@
+# Sign in with Solana API Server
+Express x JWT x Solana for sign in API server.
+
+## Tech
+- Express.js(API Mode)
+- JWT: [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- Sign: [Sign Message](https://github.com/256hax/solana-anchor-react-minimal-example/blob/main/scripts/solana/spl-token-v0.3.x/createSignMessageUsingNaCl.ts)
+
+## Run
+### Run API Server
+```
+% npm i
+% npm run dev
+```
+
+### Request API
+Import [Postman request](https://github.com/256hax/sign-in-with-solana-api-server/blob/main/docs/Sign%20In%20with%20Solana.postman_collection.json).  
+
+Then request API using Postman:  
+1. http://localhost:4100/auths/create-message
+2. http://localhost:4100/auths/sign-message
+3. http://localhost:4100/auths/verify-signature
+4. http://localhost:4100/auths/sign-in
+5. http://localhost:4100/auths/verify-jwt
