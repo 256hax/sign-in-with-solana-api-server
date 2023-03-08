@@ -1,5 +1,5 @@
-# Sign in with Solana API Server
-Express x JWT x Solana for sign in API server minimal example.  
+# Sign In with Solana API Server
+Express x JWT x Sign In with Solana API server minimal example.  
 For experiment purpose only.
 
 ## Tech
