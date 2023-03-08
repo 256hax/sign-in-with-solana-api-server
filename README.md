@@ -1,5 +1,6 @@
 # Sign in with Solana API Server
-Express x JWT x Solana for sign in API server.
+Express x JWT x Solana for sign in API server minimal example.  
+For experiment purpose only.
 
 ## Tech
 - Express.js(API Mode)
