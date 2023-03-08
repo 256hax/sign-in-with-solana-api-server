@@ -15,7 +15,7 @@ For experiment purpose only.
 ```
 
 ### Request API
-Import [Postman request](https://github.com/256hax/sign-in-with-solana-api-server/blob/main/docs/Sign%20In%20with%20Solana.postman_collection.json).  
+Import [Postman request](https://github.com/256hax/sign-in-with-solana-api-server/tree/main/docs/postman).  
 
 Then request API using Postman:  
 1. http://localhost:4100/auths/create-message
