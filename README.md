@@ -23,3 +23,7 @@ Then request API using Postman:
 3. http://localhost:4100/auths/verify-signature
 4. http://localhost:4100/auths/sign-in
 5. http://localhost:4100/auths/verify-jwt
+
+## TODO
+- Encryption JWT
+- Follow Sign In With (SIW) standards(EIP-4361)
