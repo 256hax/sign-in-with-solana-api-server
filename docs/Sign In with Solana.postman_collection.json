@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "b4af27a5-afee-4d5f-abf5-84c83f2a3e3d",
+		"name": "Sign In with Solana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24410445"
+	},
+	"item": [
+		{
+			"name": "/auths/create-message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4100/auths/create-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"auths",
+						"create-message"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/auths/create-message",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4100/auths/create-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4100",
+							"path": [
+								"auths",
+								"create-message"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-NetHAi/2kvYmXV3Am2Erj36dUrk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 07:36:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"f07e210c-652b-4578-aff3-0a1ae2ce8165\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/auths/sign-message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"f07e210c-652b-4578-aff3-0a1ae2ce8165\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4100/auths/sign-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"auths",
+						"sign-message"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/auths/sign-message",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"f07e210c-652b-4578-aff3-0a1ae2ce8165\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4100/auths/sign-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4100",
+							"path": [
+								"auths",
+								"sign-message"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "104"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"68-88pqH1xoECYEFm4U1KCu0L4lqZI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 07:36:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"signature\": \"3XrHS3wNmCnejmixN7mujSew4MfAzUwLsN18KGamun4CJTgNekSyN5n2nWN5BnyhoHfsJ1iRNSoywn4T1ru6SKjC\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/auths/verify-signature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"signature\": \"3XrHS3wNmCnejmixN7mujSew4MfAzUwLsN18KGamun4CJTgNekSyN5n2nWN5BnyhoHfsJ1iRNSoywn4T1ru6SKjC\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4100/auths/verify-signature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"auths",
+						"verify-signature"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/auths/verify-signature",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"signature\": \"3XrHS3wNmCnejmixN7mujSew4MfAzUwLsN18KGamun4CJTgNekSyN5n2nWN5BnyhoHfsJ1iRNSoywn4T1ru6SKjC\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4100/auths/verify-signature",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4100",
+							"path": [
+								"auths",
+								"verify-signature"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11-z5EWd6k6y6k0MQWTeNizVwP8d3Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 07:36:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"verified\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "/auths/sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4100/auths/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"auths",
+						"sign-in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/auths/sign-in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4100/auths/sign-in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4100",
+							"path": [
+								"auths",
+								"sign-in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiSFh0Qm04WFpieGFUdDQxdXFhS2h3VUFhNloxYVB5dkpkc1pWRU5pV3NldGciLCJpYXQiOjE2NzgyNjEwMDUsImV4cCI6MTY3ODM0NzQwNSwiYXVkIjoibG9jYWxob3N0IiwiaXNzIjoiYWRtaW5AbG9jYWxob3N0IiwianRpIjoiNGVhOTBlNDktMGZlMy00ZmMwLTk4ZGYtZWNiZjM0NGY3ZWQzIn0.Jg15vNthLvCPov6HCPuGkkvvv1qL1SyCKoo_qOhqI-c; Path=/; HttpOnly"
+						},
+						{
+							"key": "Content-Length",
+							"value": "322"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"142-1IAKgHwfVn8dvnHKvd+Nj+YI3ec\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 07:36:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiSFh0Qm04WFpieGFUdDQxdXFhS2h3VUFhNloxYVB5dkpkc1pWRU5pV3NldGciLCJpYXQiOjE2NzgyNjEwMDUsImV4cCI6MTY3ODM0NzQwNSwiYXVkIjoibG9jYWxob3N0IiwiaXNzIjoiYWRtaW5AbG9jYWxob3N0IiwianRpIjoiNGVhOTBlNDktMGZlMy00ZmMwLTk4ZGYtZWNiZjM0NGY3ZWQzIn0.Jg15vNthLvCPov6HCPuGkkvvv1qL1SyCKoo_qOhqI-c\""
+				}
+			]
+		},
+		{
+			"name": "/auths/verify-jwt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4100/auths/verify-jwt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4100",
+					"path": [
+						"auths",
+						"verify-jwt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/auths/verify-jwt",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4100/auths/verify-jwt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4100",
+							"path": [
+								"auths",
+								"verify-jwt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "191"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bf-4SaJSyt0DJDtKRqY3ztX/R9iPy8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 07:36:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"decoded\": {\n        \"address\": \"HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg\",\n        \"iat\": 1678261005,\n        \"exp\": 1678347405,\n        \"aud\": \"localhost\",\n        \"iss\": \"admin@localhost\",\n        \"jti\": \"4ea90e49-0fe3-4fc0-98df-ecbf344f7ed3\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

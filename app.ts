@@ -7,7 +7,7 @@ import logger, { token } from 'morgan';
 import cors from 'cors';
 
 // Routes
-import { router as authRouter } from './app/contollers/auth';
+import { router as authsRouter } from './app/contollers/auths';
 
 const app = express();
 
@@ -43,7 +43,7 @@ app.use(cors()); // CORS-enabled for all origins
 // -------------------------------------------
 //  Routing
 // -------------------------------------------
-app.use('/auth', authRouter);
+app.use('/auths', authsRouter);
 
 // -------------------------------------------
 //  Server Config
