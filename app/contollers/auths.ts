@@ -130,8 +130,12 @@ router.post('/sign-in', async (req, res, next) => {
     const token = jwt.sign(payload, jwtSecret, options);
 
     // Set cookie
-    res.cookie('token', token, { httpOnly: true });
-    // Decode token: https://jwt.io/
+    res.cookie('token', token, {
+      httpOnly: true,
+      sameSite: 'strict',
+      // secure: true, // Recommend activation
+    });
+    // Decode token tool: https://jwt.io/
 
     return res.json(token);
   } catch (error) {
