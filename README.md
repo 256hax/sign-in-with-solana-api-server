@@ -28,8 +28,11 @@ Then request API using Postman:
 5. http://localhost:4100/auths/verify-jwt
 
 ## TODO
-- Encryption JWT
 - Follow Sign In With (SIW) standards(EIP-4361)
+  - [EIP-4361: Sign-In with Ethereum](https://docs.login.xyz/general-information/siwe-overview/eip-4361)
+  - [Phantom Sign In With Solana (EIP-4361 with Solana address & chain-id grammar)](https://docs.phantom.app/ethereum-and-polygon/getting-started/signing-a-message#support-for-sign-in-with-standards)
+  - [Implementation example - Web3Auth](https://siws.web3auth.io/creatingsismessage)
+- Encrypt JWT using [jose](https://www.npmjs.com/package/jose)
 
 ## Another Way
 If you need to full-stack, use [Blocksmith-Labs/solana-next-auth](https://github.com/Blocksmith-Labs/solana-next-auth) (build with NextAuth.js and Next.js).
