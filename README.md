@@ -1,6 +1,6 @@
 # Sign In with Solana API Server
 Express x JWT x Sign In with Solana API server minimal example.  
-For experiment purpose only.
+For experiment purpose only. I highly recommend to do security vulnerability assesments before launch.
 
 ## System Process and Program Scope
 ![System Process](https://github.com/256hax/sign-in-with-solana-api-server/blob/main/docs/screenshot/sytem-process.png?raw=true)
