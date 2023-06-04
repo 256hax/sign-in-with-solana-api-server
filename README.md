@@ -17,7 +17,7 @@ For experiment purpose only. I highly recommend to do security vulnerability ass
 % npm run dev
 ```
 
-### Request API
+### Request URL
 Import [Postman request](https://github.com/256hax/sign-in-with-solana-api-server/tree/main/docs/postman).  
 
 Then request API using Postman:  
