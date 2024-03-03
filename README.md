@@ -27,6 +27,9 @@ Then request API using Postman:
 4. http://localhost:4100/auths/sign-in
 5. http://localhost:4100/auths/verify-jwt
 
+## Note
+Phantom make new standard [Sign In With Solana (SIWS)](https://phantom.app/learn/developers/sign-in-with-solana).
+
 ## TODO
 - Follow Sign In With (SIW) standards(EIP-4361)
   - [EIP-4361: Sign-In with Ethereum](https://docs.login.xyz/general-information/siwe-overview/eip-4361)
