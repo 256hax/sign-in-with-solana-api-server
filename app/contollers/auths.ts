@@ -41,7 +41,7 @@ router.post('/create-message', async (req, res, next) => {
 });
 
 // Normally, sign message using wallet app(e.g. Phantom) in frontend.
-// Example: https://github.com/256hax/solana-anchor-react-minimal-example/blob/main/react/connect_wallet/solana-wallet-adapter/src/components/SignMessageButton.tsx
+// Example: https://github.com/256hax/solana-anchor-react-minimal-example/blob/main/react/sign_message/src/components/SignMessageButton.tsx
 router.post('/sign-message', async (req, res, next) => {
   try {
     res.header('Content-Type', 'application/json; charset=utf-8');
